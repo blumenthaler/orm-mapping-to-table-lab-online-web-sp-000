@@ -13,7 +13,11 @@ class Student
   end
 
   def self.create_table
-    
+    <<-SQL
+    CREATE TABLE students (
+    name TEXT,
+    )
+    SQL
   end
   
   def self.drop_table
