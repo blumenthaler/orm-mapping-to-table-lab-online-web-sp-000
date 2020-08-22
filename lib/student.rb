@@ -38,6 +38,7 @@ class Student
     VALUES (?, ?);
     SQL
     
+    DB[:conn].execute(sql, student)
   end
 
   # Remember, you can access your database connection anywhere in this class
